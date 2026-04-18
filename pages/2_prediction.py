@@ -7,7 +7,7 @@ import io, csv
 
 @st.cache_resource
 def load_model():
-    model_path = "model-name-anonymized" # changed for now
+    model_path = "AnjaliSarawgi/oldNepali_htr_model" # changed for now
     model = VisionEncoderDecoderModel.from_pretrained(model_path)
     tokenizer = PreTrainedTokenizerFast.from_pretrained(model_path)
     processor = TrOCRProcessor.from_pretrained("microsoft/trocr-base-handwritten")
